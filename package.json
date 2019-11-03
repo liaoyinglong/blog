@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {},
   "devDependencies": {
+    "prettier": "^1.18.2",
     "typescript": "^3.7.1-rc"
   }
 }

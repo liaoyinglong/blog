@@ -15,7 +15,6 @@ function myBind<F extends Fn, T extends any, A extends any[]>(
 const obj = {
   a: 1,
   say(message: string) {
-    // @ts-ignore
     console.log(this.a);
     console.log(message);
   }

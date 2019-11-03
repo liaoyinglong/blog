@@ -13,7 +13,6 @@ function myBind(fn, thisArg) {
 var obj = {
     a: 1,
     say: function (message) {
-        // @ts-ignore
         console.log(this.a);
         console.log(message);
     }

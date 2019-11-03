@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf225fa4-faca-4343-9166-8ff68ef16202" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/01.对象数组去重/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/02.实现一个bind方法/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,12 +41,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\my\06-docs\面试题合集\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
     <property name="ts.external.directory.path" value="D:\my\06-docs\面试题合集\node_modules\typescript\lib" />
   </component>
-  <component name="RunManager" selected="TypeScript.index.ts">
+  <component name="RunManager" selected="TypeScript.index.ts (1)">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/01.对象数组去重/index.js" working-dir="$PROJECT_DIR$/src/01.对象数组去重">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.ts (1)" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
+      <module name="面试题合集" />
+      <option name="interpreterRef" value="project" />
+      <option name="interpreterOptions" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src/02.实现一个bind方法" />
+      <option name="tsconfigFile" value="" />
+      <option name="extraTypeScriptOptions" value="" />
+      <option name="scriptName" value="$PROJECT_DIR$/src/02.实现一个bind方法/index.ts" />
+      <option name="programParameters" value="" />
+      <option name="tsnodePackage" value="C:\Program Files\nodejs\node_modules\ts-node" />
       <method v="2" />
     </configuration>
     <configuration name="index.ts" type="TypeScriptProgramRunner" factoryName="TypeScript" temporary="true">
@@ -67,6 +78,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TypeScript.index.ts (1)" />
         <item itemvalue="TypeScript.index.ts" />
         <item itemvalue="Node.js.index.js" />
       </list>
@@ -90,7 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572774336737</updated>
       <workItem from="1572774337952" duration="194000" />
-      <workItem from="1572774553689" duration="931000" />
+      <workItem from="1572774553689" duration="1845000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: Initial commit.">
       <created>1572774389417</created>
@@ -99,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572774389417</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":sparkles: 添加01">
+      <created>1572775549361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572775549361</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +126,8 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/01.对象数组去重/index.js" />
+        <option value="$PROJECT_DIR$/src/02.实现一个bind方法/index.js" />
+        <option value="$PROJECT_DIR$/src/shared/index.js" />
       </list>
     </option>
   </component>
@@ -114,33 +135,34 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value=":tada: Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value=":tada: Initial commit." />
+    <MESSAGE value=":sparkles: 添加01" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 添加01" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="487" y="20" key="CommitChangelistDialog2" timestamp="1572774387982">
+    <state x="487" y="20" key="CommitChangelistDialog2" timestamp="1572775548423">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="487" y="20" key="CommitChangelistDialog2/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572774387982" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1572774356293">
+    <state x="487" y="20" key="CommitChangelistDialog2/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572775548423" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1572775526924">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572774356293" />
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1572775484528">
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572775526924" />
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom" timestamp="1572776402660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572775484528" />
-    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1572775484527">
+    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572776402660" />
+    <state width="1877" height="261" key="GridCell.Tab.0.center" timestamp="1572776402660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572775484527" />
-    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1572775484526">
+    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572776402660" />
+    <state width="1877" height="261" key="GridCell.Tab.0.left" timestamp="1572776402660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572775484526" />
-    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1572775484527">
+    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572776402660" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right" timestamp="1572776402660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572775484527" />
+    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1920.1040/-1080.0.1080.1880@0.0.1920.1040" timestamp="1572776402660" />
     <state x="292" y="162" width="1267" height="716" key="SettingsEditor" timestamp="1572775368952">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

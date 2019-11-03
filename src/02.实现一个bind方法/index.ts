@@ -1,4 +1,4 @@
-import { Fn } from "src/shared";
+import { Fn } from "../shared";
 
 export default {};
 

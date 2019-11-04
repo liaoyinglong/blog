@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      class B {
+        constructor() {
+          this.foo = this.foo.bind(this);
+        }
+        foo() {
+          console.log(this.foo);
+        }
+      }
+
+      window.testMap = new Map();
+
+      while (testMap.size < 100) {
+        testMap.set(testMap.size, new B());
+      }
+      console.log(testMap);
+    </script>
+  </body>
+</html>

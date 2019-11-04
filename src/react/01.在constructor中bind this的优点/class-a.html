@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      class A {
+        foo = () => {
+          console.log(this.foo);
+        };
+      }
+
+      window.testMap = new Map();
+
+      while (testMap.size < 100) {
+        testMap.set(testMap.size, new A());
+      }
+      console.log(testMap);
+    </script>
+  </body>
+</html>

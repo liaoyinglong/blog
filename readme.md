@@ -5,6 +5,7 @@
 - [x] [03.如何从 10000 个数中找到最大的 10 个数](./src/03.如何从10000个数中找到最大的10个数/index.ts)
 - [x] [04.实现一个 EventEmitter](./src/04.实现一个EventEmitter/index.ts)
 - [x] [05.实现一个 curry 方法](./src/05.实现一个curry方法/index.ts)
+- [x] [06.实现 debounce](./src/06.实现debounce/index.ts)
 
 #### vue 相关
 
@@ -18,7 +19,6 @@ TODO:
 
 - [ ] 经典的上台阶问题
 - [ ] 简单实现`co`
-- [ ] 简单实现`debounce`
 - [ ] 简单实现`throttle`
 - [ ] 渲染 10W 条数据-简单实现`virtualList`
 - [ ] 渲染 10W 条数据-简单实现`timeslice`

@@ -14,9 +14,11 @@ function checkAnswer() {
     var cloneArr = __spreadArrays(arr);
     cloneArr.sort(function (a, b) { return b - a; });
     var answer = cloneArr.slice(0, 10);
+    console.log(answer);
 }
+checkAnswer();
 var res = [];
 arr.forEach(function (value, index) {
-    if (res.length < 10) {
-    }
+    shared_1.insetToArr(res, value, 10);
 });
+console.log(res, "<- res");

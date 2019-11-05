@@ -10,6 +10,8 @@
       <div>
         <h2>
           reRender 之后的key跟之前一样，dom被复用，input之前输入的值还保留
+          <br />
+          没有给key默认就是undefined，所以reRender 前后都是一样的
         </h2>
         <ul>
           <li v-for="item,i in list" :key="i">
@@ -22,7 +24,6 @@
         <h2>
           reRender
           之后的key跟之前不一样，dom不会被复用，input之前输入的值被重置。
-          没有给key默认就是undefined，所以reRender 前后都是一样的
         </h2>
         <p></p>
         <ul>

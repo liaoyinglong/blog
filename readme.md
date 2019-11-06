@@ -7,6 +7,7 @@
 - [x] [05.实现一个 curry 方法](./src/05.实现一个curry方法/index.ts)
 - [x] [06.实现 debounce](./src/06.实现debounce/index.ts)
 - [x] [07.实现 throttle](./src/07.实现throttle/index.ts)
+- [x] [08.模拟 co](./src/08.模拟co/index.ts)
 
 #### vue 相关
 
@@ -19,6 +20,5 @@
 TODO:
 
 - [ ] 经典的上台阶问题
-- [ ] 简单实现`co`
 - [ ] 渲染 10W 条数据-简单实现`virtualList`
 - [ ] 渲染 10W 条数据-简单实现`timeslice`

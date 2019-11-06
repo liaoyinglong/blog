@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/react/16.10.2/umd/react.development.js"></script>
+    <script src="https://cdn.bootcss.com/react-dom/16.10.2/umd/react-dom.development.js"></script>
+    <style>
+      body {
+        overflow: hidden;
+      }
+      .content-area {
+        border: 1px solid #000;
+        margin: 50px;
+        height: 90vh;
+      }
+      .list-container {
+        height: 100%;
+        overflow: auto;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .list-phantom {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+      .list {
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        text-align: center;
+      }
+
+      .list-item {
+        padding: 10px;
+        color: #555;
+        box-sizing: border-box;
+        border-bottom: 1px solid #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

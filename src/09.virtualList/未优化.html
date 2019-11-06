@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <button id="button">button</button>
+    <br />
+    <ul id="container"></ul>
+
+    <script>
+      document.getElementById("button").addEventListener("click", function() {
+        let now = Date.now();
+
+        const total = 40000;
+
+        let ul = document.getElementById("container");
+        let fragment = document.createDocumentFragment();
+
+        for (let i = 0; i < total; i++) {
+          let li = document.createElement("li");
+          li.innerText = i + "";
+          fragment.appendChild(li);
+        }
+        ul.appendChild(fragment);
+
+        console.log("JS运行时间：", Date.now() - now);
+
+        setTimeout(() => {
+          console.log("总运行时间：", Date.now() - now);
+        }, 0);
+      });
+    </script>
+  </body>
+</html>

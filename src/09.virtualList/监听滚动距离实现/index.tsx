@@ -1,6 +1,8 @@
+import set = Reflect.set;
+
 const { useMemo, useEffect, useRef, useState } = React;
 
-const maxCount = 100;
+const maxCount = 0;
 const arr = Array.from({ length: maxCount }, (v, i) => i + 1);
 
 interface VirtualListProps<T = any> {
@@ -51,7 +53,7 @@ function VirtualList<T extends any>(props: VirtualListProps<T>) {
       start,
       end: start + visibleCount
     });
-    setOffset(scrollTop - (scrollTop % itemHeight));
+    setOffset(scrollTop);
   };
 
   // Components
@@ -88,9 +90,23 @@ function VirtualList<T extends any>(props: VirtualListProps<T>) {
 }
 
 function App() {
+  const [list, setList] = useState(arr);
+
+  const add = (max: number) => {
+    const newList: number[] = [];
+    for (let i = list.length - 1; i < max; i++) {
+      newList.push(i++);
+    }
+    setList(list.concat(newList));
+  };
+
   return (
     <div className={"content-area"}>
-      <VirtualList<number> list={arr} itemHeight={100}></VirtualList>
+      <VirtualList<number> list={list} itemHeight={100}></VirtualList>
+      <br />
+      <button onClick={() => add(100)}>追加100条数据</button>
+      <button onClick={() => add(10000)}>追加10000条数据</button>
+      <button onClick={() => add(40000)}>追加40000条数据</button>
     </div>
   );
 }

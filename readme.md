@@ -8,7 +8,7 @@
 - [x] [06.实现 debounce](./src/06.实现debounce/index.ts)
 - [x] [07.实现 throttle](./src/07.实现throttle/index.ts)
 - [x] [08.模拟 co](./src/08.模拟co/index.ts)
-- [x] [09.virtualList by onscroll ](./src/09.virtualList/监听滚动距离实现/index.html)
+- [x] [09.virtualList by onscroll ](https://liaoyinglong.github.io/some-code-question/src/09.virtualList/%E7%9B%91%E5%90%AC%E6%BB%9A%E5%8A%A8%E8%B7%9D%E7%A6%BB%E5%AE%9E%E7%8E%B0/index.html)
 
 #### vue 相关
 
@@ -21,5 +21,4 @@
 TODO:
 
 - [ ] 经典的上台阶问题
-- [ ] 渲染 10W 条数据-简单实现`virtualList`
-- [ ] 渲染 10W 条数据-简单实现`timeslice`
+- [ ] 简单实现`timeslice`

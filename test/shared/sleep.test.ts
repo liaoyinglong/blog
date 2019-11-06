@@ -17,6 +17,7 @@ describe("测试 sleep 方法", () => {
     jest.advanceTimersByTime(500);
     expect(res).resolves.toBe("aa");
 
+    expect.hasAssertions();
     res.then(() => {
       expect(fn).toBeCalledTimes(1);
       expect(fn).toBeCalledWith("aa");

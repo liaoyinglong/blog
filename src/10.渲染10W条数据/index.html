@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+      .content-area {
+        border: 1px solid #000;
+        margin: 30px;
+        height: 85vh;
+      }
+      .list-container {
+        height: 100%;
+        overflow: auto;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .list-phantom {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+      .list {
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        text-align: center;
+      }
+
+      .list-item {
+        padding: 10px;
+        color: #555;
+        box-sizing: border-box;
+        border-bottom: 1px solid #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="content-area">
+        <div class="list-container">
+          <div class="list-phantom"></div>
+          <div class="list"></div>
+        </div>
+
+        <br />
+        <button id="toggleBtn" onclick="toggle()">未优化</button>
+        <button onclick="add(10000)">追加10000条数据</button>
+        <button onclick="add(80000)">追加80000条数据</button>
+        <button onclick="add(180000)">追加180000条数据</button>
+
+        <p id="log"></p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,5 +1,3 @@
-import set = Reflect.set;
-
 const { useMemo, useEffect, useRef, useState } = React;
 
 const maxCount = 0;

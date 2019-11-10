@@ -21,12 +21,9 @@ export class MyEventEmitter {
   }
 
   emit(eventName: StringOrNumber, ...args: any) {
-    const eventArr = this.eventMap.get(eventName);
-    if (eventArr !== void 0) {
-      eventArr.forEach(fn => {
-        fn.apply(void 0, args);
-      });
-    }
+    this.eventMap.get(eventName)?.forEach(fn => {
+      fn.apply(void 0, args);
+    });
   }
 
   off<F extends Fn>(eventName: StringOrNumber, fn?: F) {
@@ -36,7 +33,10 @@ export class MyEventEmitter {
     }
     const eventArr = this.eventMap.get(eventName);
     if (eventArr !== void 0) {
-      this.eventMap.set(eventName, eventArr.filter(item => item !== fn));
+      this.eventMap.set(
+        eventName,
+        eventArr.filter(item => item !== fn)
+      );
     }
   }
 }

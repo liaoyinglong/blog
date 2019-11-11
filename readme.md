@@ -13,6 +13,7 @@
 #### vue 相关
 
 - [x] [01.v-for 循环 key 的作用](https://liaoyinglong.github.io/some-code-question/src/vue/01.v-for%20循环%20key%20的作用/index.html)
+- [x] [02.为什么 Vuex 的 Mutation 必须是同步函数](https://liaoyinglong.github.io/some-code-question/src/vue/02.%E4%B8%BA%E4%BB%80%E4%B9%88%20Vuex%20%E7%9A%84%20Mutation%20%E5%BF%85%E9%A1%BB%E6%98%AF%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0/)
 
 #### react 相关
 

@@ -113,7 +113,14 @@ this._withCommit(() => {
 this._subscribers.forEach(sub => sub(mutation, this.state));
 ```
 
+### 如果 Mutation 是异步函数会造成什么问题？
+
+会使得 debug 麻烦，使得`vue-devtool`的时间旅行功能不能用。
+
+### 如何避免这个问题的？
+
+开启严格模式。在异步回调的函数里面修改`state`将会在开发环境报错。
+
 ### 附上尤雨溪的回答
 
-vuex 中为什么把把异步操作封装在 action，把同步操作放在 mutations？ - 尤雨溪的回答 - 知乎
-https://www.zhihu.com/question/48759748/answer/112823337
+(vuex 中为什么把把异步操作封装在 action，把同步操作放在 mutations？ - 尤雨溪的回答 - 知乎)[https://www.zhihu.com/question/48759748/answer/112823337]

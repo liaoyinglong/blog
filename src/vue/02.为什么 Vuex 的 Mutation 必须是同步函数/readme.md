@@ -123,4 +123,4 @@ this._subscribers.forEach(sub => sub(mutation, this.state));
 
 ### 附上尤雨溪的回答
 
-(vuex 中为什么把把异步操作封装在 action，把同步操作放在 mutations？ - 尤雨溪的回答 - 知乎)[https://www.zhihu.com/question/48759748/answer/112823337]
+[vuex 中为什么把把异步操作封装在 action，把同步操作放在 mutations？ - 尤雨溪的回答 - 知乎](https://www.zhihu.com/question/48759748/answer/112823337)

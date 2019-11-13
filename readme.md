@@ -11,6 +11,7 @@
 - [x] [09.virtualList by onscroll ](https://liaoyinglong.github.io/some-code-question/src/09.virtualList/%E7%9B%91%E5%90%AC%E6%BB%9A%E5%8A%A8%E8%B7%9D%E7%A6%BB%E5%AE%9E%E7%8E%B0/index.html)
 - [x] [10.渲染 10W 条数据](./src/10.渲染10W条数据)
 - [x] [11.（携程）拍平数组并去重排序](./src/11.（携程）拍平数组并去重排序/index.ts)
+- [x] [12.两个数组合并成一个数组](./src/12.两个数组合并成一个数组/index.ts)
 
 #### vue 相关
 

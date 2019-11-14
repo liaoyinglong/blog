@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      父组件数据： {{ str }}
+      <br />
+      <button @click="click">父组件更改数据</button>
+      <hr />
+      <child :parent-str="str"></child>
+    </div>
+
+    <script>
+      Vue.component("child", {
+        template: `
+      <div>子组件接收到的props：{{ parentStr }}
+      <br>
+      <button @click="addOne">addOne</button>
+      </div>
+      `,
+        props: ["parentStr"],
+        methods: {
+          addOne() {
+            // this.parentStr++;
+            this.parentStr = [3, 2, 1];
+          }
+        }
+      });
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            str: [1, 2, 3]
+          };
+        },
+        methods: {
+          click() {
+            this.str = Math.random();
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

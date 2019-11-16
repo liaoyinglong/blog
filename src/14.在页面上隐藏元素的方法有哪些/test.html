@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      #app {
+        height: 40vh;
+        position: relative;
+        overflow: hidden;
+      }
+      h1 {
+        margin: 0;
+        overflow: hidden;
+        /*transform: translateZ(0);*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1 id="h1">看我显示还是隐藏</h1>
+    </div>
+
+    <div class="btns">
+      <button data-style="visibility" data-0="hidden" data-1="visible">
+        toggleVisibility
+      </button>
+
+      <button data-style="display" data-0="none" data-1="block">
+        toggleDisplay
+      </button>
+
+      <button id="togglePostion">togglePostion</button>
+
+      <button data-style="opacity" data-0="0" data-1="1">
+        toggleOpacity
+      </button>
+
+      <button data-style="transform" data-0="scale(0)" data-1="scale(1)">
+        toggleScale
+      </button>
+
+      <button
+        data-style="transform"
+        data-0="translateY(-200vh)"
+        data-1="translateY(0)"
+      >
+        toggleTranslateY
+      </button>
+
+      <button data-style="height" data-0="0" data-1="100%">
+        toggleHeight
+      </button>
+    </div>
+
+    <script>
+      const h1 = document.querySelector("#h1");
+
+      [...document.querySelectorAll("button")]
+        .filter(btn => btn.id === "")
+        .forEach(btn => {
+          const styleName = btn.dataset.style;
+          const fns = [0, 1].map(value => () => {
+            h1.style[styleName] = btn.dataset[value];
+          });
+          btn.addEventListener("click", toggle(...fns));
+        });
+
+      document.querySelector("#togglePostion").addEventListener(
+        "click",
+        toggle(
+          () => {
+            h1.style.position = "absolute";
+            h1.style.left = "200vw";
+            h1.style.top = "200vh";
+          },
+          () => {
+            h1.style.left = "";
+            h1.style.top = "";
+          }
+        )
+      );
+
+      function toggle(...fns) {
+        return (...args) => {
+          const fn = fns.shift();
+          const res = fn.apply(this, args);
+          fns.push(fn);
+          return res;
+        };
+      }
+    </script>
+  </body>
+</html>

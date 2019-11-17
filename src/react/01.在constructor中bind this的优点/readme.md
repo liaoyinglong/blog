@@ -52,9 +52,9 @@ var B = /** @class */ (function() {
 
 ##### 打开 chrome 调试测试
 
-- `class A` ![class-a对应内存快照](./class-a对应内存快照.png)
+- `class A` ![class-a对应内存快照](class-a对应内存快照.png)
 
-- `class B` ![class-b对应内存快照](./class-b对应内存快照.png)
+- `class B` ![class-b对应内存快照](class-b对应内存快照.png)
 
 #### 得出结论
 
@@ -70,7 +70,7 @@ var B = /** @class */ (function() {
 
 测试代码路径：
 
-- [class-a.html](./class-a.html)
-- [class-a 对应内存快照.png](./class-a对应内存快照.png)
-- [class-b.html](./class-b.html)
-- [class-b 对应内存快照.png](./class-b对应内存快照.png)
+- [class-a.html](class-a.html)
+- [class-a 对应内存快照.png](class-a对应内存快照.png)
+- [class-b.html](class-b.html)
+- [class-b 对应内存快照.png](class-b对应内存快照.png)

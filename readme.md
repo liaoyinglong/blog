@@ -20,6 +20,7 @@
 - [x] [01.v-for 循环 key 的作用](https://liaoyinglong.github.io/some-code-question/src/vue/01.v-for%20循环%20key%20的作用/index.html)
 - [x] [02.为什么 Vuex 的 Mutation 必须是同步函数](https://liaoyinglong.github.io/some-code-question/src/vue/02.%E4%B8%BA%E4%BB%80%E4%B9%88%20Vuex%20%E7%9A%84%20Mutation%20%E5%BF%85%E9%A1%BB%E6%98%AF%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0/)
 - [x] [03.在 Vue 中，子组件为何不可以修改父组件传递的 Prop，如果修改了，Vue 是如何监控到属性的修改并给出警告的](https://liaoyinglong.github.io/some-code-question/src/vue/03.%E5%9C%A8%20Vue%20%E4%B8%AD%EF%BC%8C%E5%AD%90%E7%BB%84%E4%BB%B6%E4%B8%BA%E4%BD%95%E4%B8%8D%E5%8F%AF%E4%BB%A5%E4%BF%AE%E6%94%B9%E7%88%B6%E7%BB%84%E4%BB%B6%E4%BC%A0%E9%80%92%E7%9A%84%20Prop%EF%BC%8C%E5%A6%82%E6%9E%9C%E4%BF%AE%E6%94%B9%E4%BA%86%EF%BC%8CVue%20%E6%98%AF%E5%A6%82%E4%BD%95%E7%9B%91%E6%8E%A7%E5%88%B0%E5%B1%9E%E6%80%A7%E7%9A%84%E4%BF%AE%E6%94%B9%E5%B9%B6%E7%BB%99%E5%87%BA%E8%AD%A6%E5%91%8A%E7%9A%84/)
+- [x] [04.记一次 vue 项目优化](https://liaoyinglong.github.io/some-code-question/src/vue/04.%E8%AE%B0%E4%B8%80%E6%AC%A1vue%E9%A1%B9%E7%9B%AE%E4%BC%98%E5%8C%96/)
 
 #### react 相关
 

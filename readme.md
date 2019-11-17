@@ -14,6 +14,7 @@
 - [x] [12.两个数组合并成一个数组](./src/12.两个数组合并成一个数组/index.ts)
 - [x] [13.数据格式化，object to arr](./src/13.数据格式化，object%20to%20arr/index.ts)
 - [x] [14.在页面上隐藏元素的方法有哪些](https://liaoyinglong.github.io/some-code-question/src/14.在页面上隐藏元素的方法有哪些)
+- [x] [15.前端性能优化](https://liaoyinglong.github.io/some-code-question/src/15.前端性能优化)
 
 #### vue 相关
 

@@ -114,8 +114,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div onClick={this.handClick.bind(this)}></div>
-        <div onClick={() => this.handClick()}></div>
+        <div onClick={this.handClick}></div>
       </>
     );
   }

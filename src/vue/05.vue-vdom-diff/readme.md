@@ -18,7 +18,7 @@
    newVnode = [c, d];
    ```
 
-2. 类似`unshift` 在最前面插入`vnode`
+2. [类似`unshift` 在最前面插入`vnode`](unshift)
 
    ```js
    oldVnode = [a, b, c, d];

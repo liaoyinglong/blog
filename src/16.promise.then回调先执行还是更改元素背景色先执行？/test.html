@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      #app {
+        background-color: red;
+        border: 1px solid #000;
+        height: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">app</div>
+
+    <button onclick="changeBg()">更改 app 的颜色</button>
+
+    <script>
+      function changeBg() {
+        const app = document.querySelector("#app");
+
+        setTimeout(function timeoutfn() {
+          console.log("setTimeout");
+        }, 0);
+
+        app.style.backgroundColor = "#000";
+
+        Promise.resolve().then(function thenFn() {
+          console.log("promise ");
+        });
+
+        const target = performance.now() + 500;
+        while (target > performance.now()) {}
+      }
+    </script>
+  </body>
+</html>

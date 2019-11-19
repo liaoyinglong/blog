@@ -1,4 +1,4 @@
-## vnode children diff unshift 流程
+## vnode children diff insert 流程
 
 示例代码：
 
@@ -17,12 +17,16 @@
       };
     },
     methods: {
-      unshift() {
-        this.list.unshift("e");
+      insert(str) {
+        this.list.splice(2, 0, "e", "f");
       }
     }
   });
 </script>
 ```
 
-1. ![](vue-vdom-diff-unshift_01.png)
+1. ![](vue-vdom-diff-insert_01.png)
+1. ![](vue-vdom-diff-insert_02.png)
+1. ![](vue-vdom-diff-insert_03.png)
+1. ![](vue-vdom-diff-insert_04.png)
+1. ![](vue-vdom-diff-insert_05.png)

@@ -1,4 +1,4 @@
-## vnode children diff push 流程
+## vnode children diff pop 流程
 
 示例代码：
 

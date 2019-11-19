@@ -39,14 +39,14 @@
    newVnode = [a, b, c, d, e, f];
    ```
 
-5. 类似`insert` 对中间部分新增
+5. [类似`insert` 对中间部分新增](insert)
 
    ```js
    oldVnode = [a, b, c, d];
    newVnode = [a, b, e, f, c, d];
    ```
 
-6. 类似`del` 对中间部分删除
+6. [类似`del` 对中间部分删除](del)
 
    ```js
    oldVnode = [a, b, c, d];

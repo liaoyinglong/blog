@@ -25,7 +25,7 @@
    newVnode = [e, f, a, b, c, d];
    ```
 
-3. 类似`pop` 移除后面的`vnode`
+3. [类似`pop` 移除后面的`vnode`](pop)
 
    ```js
    oldVnode = [a, b, c, d];

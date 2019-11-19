@@ -11,7 +11,7 @@
 
 `vnode children`的更新流程跟数组操作类似。
 
-1. 类似`shift` 移除前面的 `vnode`
+1. [类似`shift` 移除前面的 `vnode`](shift)
 
    ```js
    oldVnode = [a, b, c, d];

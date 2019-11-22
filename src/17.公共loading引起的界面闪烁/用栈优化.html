@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <link
+    href="https://cdn.bootcss.com/element-ui/2.12.0/theme-chalk/index.css"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.js"></script>
+  <script src="https://cdn.bootcss.com/element-ui/2.12.0/index.js"></script>
+  <script src="https://cdn.bootcss.com/lodash.js/4.17.15/lodash.js"></script>
+  <body>
+    <div id="app">
+      <h3>请求成功列表</h3>
+      <ul>
+        <li v-for="item in list ">
+          第【{{item.count}}】个请求回来了，耗时【{{item.time}}】
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  <script></script>
+
+  <script>
+    const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+    const randomMs = () => Math.random() * 5000;
+    const LoadingService = {
+      _loadingStack: [],
+      show() {
+        const loadingInstance = ELEMENT.Loading.service({
+          fullscreen: true,
+          background: "rgba(0, 0, 0, 0.7)",
+          text: "Loading"
+        });
+        this._loadingStack.push(loadingInstance);
+      },
+      hide() {
+        const loadingInstance = this._loadingStack.shift();
+        if (this._loadingStack.length) return;
+        loadingInstance && loadingInstance.close();
+      }
+    };
+    const api = {
+      async getData(i, time) {
+        LoadingService.show();
+        await sleep(time);
+        LoadingService.hide();
+      }
+    };
+
+    const vm = new Vue({
+      el: "#app",
+      data() {
+        return {
+          list: []
+        };
+      },
+      created() {
+        for (let i = 0; i < 10; i++) {
+          const time = randomMs();
+          api.getData(i + 1, time).then(() => {
+            this.list.push({ count: i + 1, time });
+          });
+        }
+      }
+    });
+  </script>
+</html>

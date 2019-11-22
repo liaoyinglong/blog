@@ -16,7 +16,7 @@
 - [x] [14.在页面上隐藏元素的方法有哪些](https://liaoyinglong.github.io/blog/src/14.在页面上隐藏元素的方法有哪些)
 - [x] [15.前端性能优化](https://liaoyinglong.github.io/blog/src/15.前端性能优化)
 - [x] [16.promise.then 回调先执行还是更改元素背景色先执行？](https://liaoyinglong.github.io/blog/src/16.promise.then回调先执行还是更改元素背景色先执行？)
-- [x] [17.公共 loading 引起的界面闪烁](https://liaoyinglong.github.io/blog/src/17.公共loading引起的界面闪烁)
+- [x] [17.公共 loading 的关闭不符合预期](https://liaoyinglong.github.io/blog/src/17.公共loading的关闭不符合预期)
 
 #### vue 相关
 

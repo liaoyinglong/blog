@@ -6,7 +6,7 @@
 
 假设我们有以下一个组件
 
-```typescript jsx
+```jsx harmony
 /** @jsx h */
 const App = (
   <div id="container">

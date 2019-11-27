@@ -29,6 +29,7 @@
 #### react 相关
 
 - [x] [01.在 constructor 中 bind this 的优点](https://liaoyinglong.github.io/blog/src/react/01.%E5%9C%A8constructor%E4%B8%ADbind%20this%E7%9A%84%E4%BC%98%E7%82%B9/)
+- [x] [02.fiberNode 的数据结构](https://liaoyinglong.github.io/blog/src/react/02.fiberNode的数据结构/)
 
 TODO:
 

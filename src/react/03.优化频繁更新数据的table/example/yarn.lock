@@ -245,6 +245,11 @@
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
 
+"@types/faker@^5.1.6":
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-5.1.6.tgz#f029aaebfc2d7931a3d729c0888c15f0187d2453"
+  integrity sha512-D+gfFWR/YCvlrYL8lgNZO1jKgIUW+cfhxsgMOqUMYwCI+tl0htD7vCCXp/oJsIxJpxuI7zqmo3gpVQBkFCM4iA==
+
 "@types/hoist-non-react-statics@^3.3.0":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
@@ -252,6 +257,11 @@
   dependencies:
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
+
+"@types/lodash@^4.14.168":
+  version "4.14.168"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
+  integrity sha512-oVfRvqHV/V6D1yifJbVRU3TMp8OT6o6BG+U9MkwuJ3U8/CsDHvalRpsxBqivn71ztOFZBTfJMvETbqHiaNSj7Q==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -443,6 +453,11 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+
+faker@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-5.2.0.tgz#5ee7ca475737eda8cf59c0cbaae5f5068e668dd9"
+  integrity sha512-UlrF1NNRIdzEPtBcy5l8JTlnXQZdz+4pQc3v2TAVocW39nnczCNQ0g0CBKgPGISJPzA2DqJVN1kdr+FCRFdN5g==
 
 fsevents@~2.1.2:
   version "2.1.3"
